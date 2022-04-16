@@ -1,10 +1,12 @@
 body {
   display: flex;
-  background-color: #f3f5fc;
+  align-items: center;
+  justify-content: center;
   position: absolute;
+  background-color: #f3f5fc;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  min-width: 262px;
 }
 
 .header {
@@ -17,7 +19,6 @@ body {
 }
 
 .main {
-  display: flex;
   background-color: transparent;
   width: 90vw;
   height: 80vh;
@@ -30,6 +31,8 @@ body {
   width: 60vw;
   height: 100%;
   background-color: transparent;
+  float: left;
+  margin: 0px;
 }
 
 .input_principal {
@@ -73,7 +76,8 @@ body {
   margin: auto;
 }
 
-.btn_cript, .btn_descript {
+.btn_cript,
+.btn_descript {
   padding: 1vw;
   width: 20vw;
   border: 1px solid #0a3871;
@@ -99,7 +103,9 @@ body {
   width: 30vw;
   height: 100%;
   border-radius: 10px;
-  box-shadow: 2px 2px 20px 2px gray;
+  box-shadow: 2px 2px 20px 2px grey;
+  float: right;
+  margin: 0px;
 }
 
 .resultado {
@@ -127,4 +133,60 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    transform: scale(0.4);
+  }
+
+  .container_input {
+    width: 100%;
+    height: 50%;
+    float: none;
+  }
+
+  .input_principal {
+    width: 65%;
+    height: 65%;
+    margin: 0;
+  }
+
+  .botoes {
+    width: 100%;
+  }
+
+  .texto_regras {
+    margin: 0;
+  }
+
+  .btn_cript {
+    height: 10vh;
+    width: 49%;
+    margin: 0;
+  }
+
+  .btn_descript {
+    height: 10vh;
+    width: 49%;
+  }
+
+  .container_resultado {
+    width: 100%;
+    height: 50%;
+    float: none;
+    margin-top: 8vh;
+  }
+
+  .resultado {
+    margin-bottom: 3vh;
+  }
+
+  .img_lupa {
+    display: none;
+  }
+
+  .resultado_vazio_bold {
+    padding-top: 7vh;
+  }
 }
