@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  background-color: #f3f5fc;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  width: 32px;
+  height: 48px;
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
+  background-image: url("../img/alura.png");
+}
+
+.main {
+  display: flex;
+  background-color: transparent;
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+}
+
+/* Container input */
+
+.container_input {
+  width: 60vw;
+  height: 100%;
+  background-color: transparent;
+}
+
+.input_principal {
+  font-family: monospace;
+  color: #0a3871;
+  width: 95%;
+  height: 65%;
+  display: block;
+  margin: 5% auto 5%;
+  text-align: start;
+  resize: none;
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+.input_principal::placeholder {
+  color: #0a3871;
+}
+
+.input_principal:focus {
+  outline: none;
+}
+
+.texto_regras {
+  width: 95%;
+  margin: 5% 0 0.3vw 2vw;
+  font-size: 14px;
+  display: block;
+}
+
+.texto_regras::before {
+  content: url("../img/exclamation.jpg");
+  margin-right: 2px;
+  position: relative;
+  top: 2px;
+}
+
+.botoes {
+  width: 95%;
+  margin: auto;
+}
+
+.btn_cript, .btn_descript {
+  padding: 1vw;
+  width: 20vw;
+  border: 1px solid #0a3871;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_cript {
+  background-color: #0a3871;
+  color: white;
+  margin-right: 3vw;
+}
+
+.btn_descript {
+  color: #0a3871;
+  background-color: #d8dfe8;
+}
+
+/* Container resultado */
+.container_resultado {
+  background-color: white;
+  text-align: center;
+  width: 30vw;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px gray;
+}
+
+.img_lupa {
+  position: relative;
+  top: 5vh;
+  width: 80%;
+  margin: auto;
+  height: 48vh;
+  background-image: url("../img/empty_search.png");
+}
+
+.resultado {
+  position: relative;
+  display: block;
+  top: 0;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.resultado_vazio_bold {
+  font-size: 22px;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  top: 2.5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 1vw;
+}
+
+.resultado_vazio {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  top: 5.5vh;
+}
