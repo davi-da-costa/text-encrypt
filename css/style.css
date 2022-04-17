@@ -13,7 +13,7 @@ body {
   width: 32px;
   height: 48px;
   position: absolute;
-  top: 2vh;
+  top: 0.5vh;
   left: 1vw;
   background-image: url("../img/alura.png");
 }
@@ -197,6 +197,8 @@ body {
 @media only screen and (max-width: 900px) {
   .header {
     transform: scale(0.4);
+    left: 0;
+    top: 0;
   }
 
   .container_input {
