@@ -59,7 +59,7 @@ body {
 
 .texto_regras {
   width: 95%;
-  margin: 5% 0 0.3vw 2vw;
+  margin: 5% 0 0.3vw 0;
   font-size: 14px;
   display: block;
 }
@@ -143,6 +143,20 @@ body {
   font-size: 15px;
   display: block;
   padding: 0 0.7vw;
+}
+
+.autor {
+  position: absolute;
+  bottom: 0;
+  left: 0.7vw;
+  border-radius: 10px;
+  border: 1px solid #0a3871;
+  padding: 0.7vw 1.2vh;
+  font-size: 14px;
+  font-family: monospace;
+  text-align: center;
+  background-color: #d8dfe8;
+  color: #0a3871;
 }
 
 @media only screen and (max-width: 900px) {
