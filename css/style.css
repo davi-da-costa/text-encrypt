@@ -113,6 +113,36 @@ body {
   float: right;
   margin: 0px;
   overflow-y: auto;
+  position: relative;
+}
+
+.texto_resultado {
+  height: 90%;
+  overflow-y: auto;
+  display: block;
+}
+  
+.btn_copiar {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 4vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color: #0a3871;
+  color: #d8dfe8;
+  cursor: pointer;
+  font-family: monospace;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn_copiado {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
 }
 
 .resultado {
@@ -122,6 +152,7 @@ body {
   margin-top: 8.4vh;
   padding: 0 1vw;
   overflow-wrap: break-word;
+  margin-top: 8.2vh;
 }
 
 .img_lupa {
@@ -152,7 +183,7 @@ body {
   border-radius: 10px;
   border: 1px solid #0a3871;
   padding: 0.7vw 1.2vh;
-  font-size: 14px;
+  font-size: 12px;
   font-family: monospace;
   text-align: center;
   background-color: #d8dfe8;
@@ -195,6 +226,10 @@ body {
     width: 49%;
   }
 
+  .btn_copiar {
+    height: 4vh;
+  }   
+
   .container_resultado {
     width: 100%;
     height: 50%;
@@ -212,5 +247,12 @@ body {
 
   .resultado_vazio_bold {
     padding-top: 7vh;
+  }
+
+  .autor {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
   }
 }
