@@ -1,6 +1,5 @@
 let btn_cript = document.querySelector(".btn_cript");
 let btn_descript = document.querySelector(".btn_descript");
-let btn_copiar = document.querySelector(".btn_copiar");
 let input = document.querySelector(".input_principal");
 let resultado = document.querySelector(".resultado");
 let msg_vazio_bold = document.querySelector(".resultado_vazio_bold");
@@ -15,19 +14,12 @@ btn_descript.addEventListener("click", function () {
   validaTexto(descriptografa);
 });
 
-btn_copiar.addEventListener("click", function () {
-  this.classList.add("btn_copiado");
-  navigator.clipboard.writeText(resultado.textContent);
-  this.textContent = "Texto copiado!";
-});
-
 function validaTexto(funcao) {
   if (input.value == "") { //input.value vazio
     resultado.textContent = "";
     msg_vazio_bold.style.display = "block";
     msg_vazio.style.display = "block";
     img_vazio.style.display = "block";
-    btn_copiar.style.display = "none";
     return;
   }
 
@@ -38,10 +30,11 @@ function validaTexto(funcao) {
         if (input.value.charCodeAt(i) == 44) continue;
         if (input.value.charCodeAt(i) == 46) continue;
         if (input.value.charCodeAt(i) == 231) continue;
-        //input.value com caracteres inválidos
-        alert("Digite um texto válido!");
-        input.value = "";
-        return;
+        else { //input.value com caracteres inválidos
+          alert("Digite um texto válido!");
+          input.value = "";
+          return;
+        }
       }
     }
   }
@@ -50,11 +43,8 @@ function validaTexto(funcao) {
   msg_vazio_bold.style.display = "none";
   msg_vazio.style.display = "none";
   img_vazio.style.display = "none";
-  btn_copiar.style.display = "block";
 
   resultado.textContent = funcao(input.value);
-  btn_copiar.classList.remove("btn_copiado");
-  btn_copiar.textContent = "Copiar";
   input.value = "";
 }
 
