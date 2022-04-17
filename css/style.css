@@ -59,7 +59,7 @@ body {
 
 .texto_regras {
   width: 95%;
-  margin: 5% 0 0.3vw 2vw;
+  margin: 5% 0 0.3vw 0;
   font-size: 14px;
   display: block;
 }
@@ -86,7 +86,8 @@ body {
   transition: all 100ms;
 }
 
-.btn_cript:active, .btn_descript:active {
+.btn_cript:active,
+.btn_descript:active {
   transform: scale(0.9);
   transition: all 100ms;
 }
@@ -105,6 +106,7 @@ body {
 /* Container resultado */
 .container_resultado {
   background-color: white;
+  position: relative;
   text-align: center;
   width: 30vw;
   height: 100%;
@@ -112,14 +114,19 @@ body {
   box-shadow: 2px 2px 20px 2px grey;
   float: right;
   margin: 0px;
+}
+
+.texto_resultado {
+  height: 90%;
   overflow-y: auto;
+  display: block;
 }
 
 .resultado {
   font-size: 30px;
   font-family: monospace;
   display: block;
-  margin-top: 8.4vh;
+  margin-top: 8.2vh;
   padding: 0 1vw;
   overflow-wrap: break-word;
 }
@@ -127,7 +134,7 @@ body {
 .img_lupa {
   width: 80%;
   height: 48vh;
-  margin:  2vh auto 0;
+  margin: 2vh auto 0;
 }
 
 .resultado_vazio_bold {
@@ -143,6 +150,28 @@ body {
   font-size: 15px;
   display: block;
   padding: 0 0.7vw;
+}
+
+.btn_copiar {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 4vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color: #0a3871;
+  color: #d8dfe8;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.btn_copiado {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
 }
 
 @media only screen and (max-width: 900px) {
@@ -198,5 +227,9 @@ body {
 
   .resultado_vazio_bold {
     padding-top: 7vh;
+  }
+
+  .btn_copiar {
+    height: 4vh;
   }
 }
