@@ -271,5 +271,7 @@ body {
     right: 0;
     bottom: auto;
     left: auto;
+    height: 5.8vh;
+    font-size: 3vh;
   }
 }
