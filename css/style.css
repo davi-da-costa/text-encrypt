@@ -15,7 +15,6 @@ body {
   position: absolute;
   top: 0.5vh;
   left: 1vw;
-  background-image: url("../img/alura.png");
 }
 
 .main {
@@ -197,6 +196,8 @@ body {
 @media only screen and (max-width: 900px) {
   .header {
     transform: scale(0.4);
+    height: 10.5vh;
+    width: 5.7vw;
     left: 0;
     top: 0;
   }
