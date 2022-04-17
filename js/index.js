@@ -35,11 +35,9 @@ function validaTexto(funcao) {
     for (let i = 0; i < input.value.length; i++) {
       if (input.value.charCodeAt(i) < 97 || input.value.charCodeAt(i) > 122) {
         if (input.value.charCodeAt(i) == 32) continue;
-        if (input.value.charCodeAt(i) == 44) continue;
-        if (input.value.charCodeAt(i) == 46) continue;
         if (input.value.charCodeAt(i) == 231) continue;
         //input.value com caracteres inválidos
-        alert("Digite um texto válido!");
+        alert("Não use caracteres inválidos!");
         input.value = "";
         return;
       }

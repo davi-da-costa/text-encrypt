@@ -28,11 +28,13 @@ body {
 /* Container input */
 
 .container_input {
-  width: 60vw;
+  width: 62%;
   height: 100%;
-  background-color: transparent;
   float: left;
   margin: 0px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px grey;
 }
 
 .input_principal {
@@ -78,7 +80,7 @@ body {
 
 .btn_cript,
 .btn_descript {
-  padding: 1vw;
+  padding: 1vw 0;
   width: 20vw;
   border: 1px solid #0a3871;
   border-radius: 10px;
@@ -94,7 +96,7 @@ body {
 .btn_cript {
   background-color: rgb(10, 56, 113);
   color: white;
-  margin-right: 3vw;
+  margin-right: 0;
 }
 
 .btn_descript {
@@ -104,9 +106,10 @@ body {
 
 /* Container resultado */
 .container_resultado {
+  position: relative;
   background-color: white;
   text-align: center;
-  width: 30vw;
+  width: 36%;
   height: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 20px 2px grey;
@@ -127,7 +130,7 @@ body {
   bottom: 0;
   display: none;
   width: 100%;
-  height: 4vw;
+  height: 6vh;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: none;
@@ -142,7 +145,7 @@ body {
 .btn_copiado {
   background-color: #d8dfe8;
   color: #0a3871;
-  border: 1px solid #0a3871;
+  border-top: 2px solid #0a3871;
 }
 
 .resultado {
@@ -199,42 +202,52 @@ body {
     width: 100%;
     height: 50%;
     float: none;
+    padding: 0;
   }
 
   .input_principal {
-    width: 65%;
+    width: 100%;
     height: 65%;
     margin: 0;
+    padding-left: 1vw;
   }
 
   .botoes {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .texto_regras {
-    margin: 0;
+    margin: 0 0 1vh 0;
   }
 
   .btn_cript {
     height: 10vh;
-    width: 49%;
-    margin: 0;
+    width: 50%;
+    margin-right: -0.88vh;
+    border-radius: 0 0 0 10px;
+    border: none;
   }
 
   .btn_descript {
     height: 10vh;
-    width: 49%;
+    width: 50%;
+    border-radius: 0 0 10px 0;
+    border: none;
   }
 
   .btn_copiar {
-    height: 4vh;
+    height: 6vh;
   }   
 
   .container_resultado {
     width: 100%;
-    height: 50%;
+    height: 51%;
+    margin-top: 7vh;
+    padding: 1.5vw 1.5vh;
     float: none;
-    margin-top: 8vh;
+    padding: 0;
   }
 
   .resultado {
@@ -246,7 +259,7 @@ body {
   }
 
   .resultado_vazio_bold {
-    padding-top: 7vh;
+    padding-top: 1vh;
   }
 
   .autor {
