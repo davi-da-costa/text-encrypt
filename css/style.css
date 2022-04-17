@@ -168,12 +168,12 @@ body {
   font-size: 23px;
   display: block;
   font-weight: bold;
-  font-family: cursive, sans-serif;
+  font-family: monospace;
   padding: 0 0.5vw;
 }
 
 .resultado_vazio {
-  font-family: cursive, sans-serif;
+  font-family: monospace;
   font-size: 15px;
   display: block;
   padding: 0 0.7vw;
